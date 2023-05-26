@@ -48,7 +48,7 @@ Here is an example for a docker-compose.yml file:
 version: '2.0'
 
 services:
-  aisfin:
+  aisstreamio:
     image: ghcr.io/sgofferj/tak-feeder-aisstream.io:latest
     restart: always
     networks:
