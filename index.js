@@ -76,7 +76,8 @@ const run = () => {
     list = objectCache.keys();
     cache = objectCache.mget(list);
     for (const [uid, cot] of Object.entries(cache)) {
-      let cotevent = functions.ais2cot(cot,intervallSecs);
+      let stale = 10 * 60 * 60 // 10 minutes
+      let cotevent = functions.ais2cot(cot,stale);
       if (typeof (cotevent) !== 'undefined') {
         if (logCot === true) {
           console.log(cotevent);
