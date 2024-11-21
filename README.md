@@ -27,6 +27,7 @@ The following values are supported and can be provided either as environment var
 | MYCOT | a-f-G-U | (optional) CoT type for heartbeat |
 | API_KEY | empty | (mandatory) aisstream.io API key |
 | TYPE_FILTER | 35 | (optional) Comma-separated list of AIS ship types to feed. **Be smart about it! Aisstream.io has _a lot_ of ships. If you feed too many AIS types, your TAK server will likely crash.**  A list of ship types can be found [here](https://api.vtexplorer.com/docs/ref-aistypes.html). |
+| BBOX | [[[-90, -180], [90, 180]]] | bounding box to subscribe to in array notation |
 
 Note: At the moment, only SSL TCP connections are supported.
 
