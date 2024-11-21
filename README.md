@@ -78,6 +78,7 @@ services:
       - TYPE_FILTER=35
       - API_KEY=<your API key>
       - UPDATE_RATE=5
+      - BBOX=[[[-90, -180], [90, 180]]]
 
 networks:
   default:
